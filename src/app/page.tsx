@@ -11,12 +11,9 @@ export default function Home() {
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-yellow-100">
             aboundcny
           </h1>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-yellow-100/80">
-            Make 4 fair teams fast. Add up to 30 names, then randomize into: Dog,
-            Horse, Rabbit, Mouse.
-          </p>
+          {/* removed subtitle */}
 
-          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <Link
               href="/teams"
               className="rounded-2xl bg-yellow-400 px-6 py-3 text-sm font-semibold text-red-950 hover:bg-yellow-300"
@@ -29,17 +26,9 @@ export default function Home() {
             >
               Game wheel
             </Link>
-            <Link
-              href="/teams"
-              className="rounded-2xl border border-yellow-400/50 bg-white/10 px-6 py-3 text-sm font-semibold text-yellow-100 hover:bg-white/15"
-            >
-              Create teams
-            </Link>
           </div>
 
-          <div className="mt-8 text-xs text-yellow-200/70">
-            Local-only. No sign-in. Just vibes.
-          </div>
+          {/* removed footer text */}
         </div>
       </div>
     </div>
