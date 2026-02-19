@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900">
@@ -13,24 +15,24 @@ export default function Home() {
           </p>
 
           <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
-            <a
+            <Link
               href="/teams"
               className="rounded-2xl bg-zinc-900 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800"
             >
               Team randomizer
-            </a>
-            <a
+            </Link>
+            <Link
               href="/games"
               className="rounded-2xl border border-zinc-300 bg-white px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
             >
               Game wheel
-            </a>
-            <a
+            </Link>
+            <Link
               href="/teams"
               className="rounded-2xl border border-zinc-300 bg-white px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
             >
               Create teams
-            </a>
+            </Link>
           </div>
 
           <div className="mt-8 text-xs text-zinc-500">

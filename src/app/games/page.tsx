@@ -106,7 +106,7 @@ export default function GamesPage() {
       setSelected(item);
       setRemaining((prev) => prev.filter((g) => g !== item));
       setSpinning(false);
-    }, 2400);
+    }, 10_000);
   }
 
   return (
@@ -162,7 +162,7 @@ export default function GamesPage() {
                 disabled={spinning || remaining.length === 0}
                 className="rounded-xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-40"
               >
-                {spinning ? "Spinning…" : "Spin"}
+                {spinning ? "Spinning (10s)…" : "Spin"}
               </button>
               <button
                 onClick={resetGames}
@@ -205,7 +205,7 @@ export default function GamesPage() {
                   style={{
                     transform: `rotate(${rotationDeg}deg)`,
                     transition: spinning
-                      ? "transform 2400ms cubic-bezier(0.12, 0.78, 0.13, 0.99)"
+                      ? "transform 10000ms cubic-bezier(0.12, 0.78, 0.13, 0.99)"
                       : "transform 0ms",
                   }}
                 >
