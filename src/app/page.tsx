@@ -2,14 +2,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900">
+    <div className="min-h-screen text-zinc-900">
       <div className="mx-auto flex min-h-screen w-full max-w-3xl flex-col items-center justify-center px-4 py-12 text-center">
-        <div className="w-full rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
-          <div className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
+        <div className="w-full rounded-3xl border border-red-900/25 bg-gradient-to-br from-red-950 via-red-900 to-red-950 p-8 shadow-sm">
+          <div className="text-xs font-semibold uppercase tracking-widest text-yellow-200/80">
             Chinese New Year Game
           </div>
-          <h1 className="mt-3 text-4xl font-semibold tracking-tight">aboundcny</h1>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-zinc-600">
+          <h1 className="mt-3 text-4xl font-semibold tracking-tight text-yellow-100">
+            aboundcny
+          </h1>
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-yellow-100/80">
             Make 4 fair teams fast. Add up to 30 names, then randomize into: Dog,
             Horse, Rabbit, Mouse.
           </p>
@@ -17,25 +19,25 @@ export default function Home() {
           <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
             <Link
               href="/teams"
-              className="rounded-2xl bg-zinc-900 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800"
+              className="rounded-2xl bg-yellow-400 px-6 py-3 text-sm font-semibold text-red-950 hover:bg-yellow-300"
             >
               Team randomizer
             </Link>
             <Link
               href="/games"
-              className="rounded-2xl border border-zinc-300 bg-white px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+              className="rounded-2xl border border-yellow-400/50 bg-white/10 px-6 py-3 text-sm font-semibold text-yellow-100 hover:bg-white/15"
             >
               Game wheel
             </Link>
             <Link
               href="/teams"
-              className="rounded-2xl border border-zinc-300 bg-white px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+              className="rounded-2xl border border-yellow-400/50 bg-white/10 px-6 py-3 text-sm font-semibold text-yellow-100 hover:bg-white/15"
             >
               Create teams
             </Link>
           </div>
 
-          <div className="mt-8 text-xs text-zinc-500">
+          <div className="mt-8 text-xs text-yellow-200/70">
             Local-only. No sign-in. Just vibes.
           </div>
         </div>
