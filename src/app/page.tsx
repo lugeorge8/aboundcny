@@ -12,18 +12,24 @@ export default function Home() {
             Horse, Rabbit, Mouse.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
             <a
               href="/teams"
               className="rounded-2xl bg-zinc-900 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800"
             >
-              Start team creation
+              Team randomizer
+            </a>
+            <a
+              href="/games"
+              className="rounded-2xl border border-zinc-300 bg-white px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+            >
+              Game wheel
             </a>
             <a
               href="/teams"
               className="rounded-2xl border border-zinc-300 bg-white px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
             >
-              Go to randomizer
+              Create teams
             </a>
           </div>
 
