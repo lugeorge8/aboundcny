@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fff7ed; /* warm paper */
+  --background: #fff1f2; /* warm red-tinted paper */
   --foreground: #111827;
 
   --cny-red: #b91c1c;
@@ -26,9 +26,9 @@
 
 body {
   background:
-    radial-gradient(1200px 500px at 20% 0%, rgba(245, 158, 11, 0.18), transparent 60%),
-    radial-gradient(900px 450px at 80% 10%, rgba(185, 28, 28, 0.20), transparent 55%),
-    radial-gradient(700px 380px at 50% 90%, rgba(245, 158, 11, 0.12), transparent 55%),
+    radial-gradient(1200px 500px at 20% 0%, rgba(245, 158, 11, 0.22), transparent 60%),
+    radial-gradient(900px 450px at 80% 10%, rgba(220, 38, 38, 0.28), transparent 55%),
+    radial-gradient(700px 380px at 50% 90%, rgba(245, 158, 11, 0.18), transparent 55%),
     var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI,
