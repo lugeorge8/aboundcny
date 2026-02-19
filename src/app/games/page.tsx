@@ -110,22 +110,22 @@ export default function GamesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900">
+    <div className="min-h-screen text-zinc-900">
       <div className="mx-auto w-full max-w-6xl px-4 py-10">
         <header className="mb-8">
           <div className="flex items-baseline justify-between gap-3">
             <div>
-              <div className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
+              <div className="text-xs font-semibold uppercase tracking-widest text-red-950/70">
                 Chinese New Year Game
               </div>
-              <h1 className="mt-2 text-3xl font-semibold tracking-tight">Games</h1>
-              <p className="mt-2 text-sm text-zinc-600">
+              <h1 className="mt-2 text-3xl font-semibold tracking-tight text-red-950">Games</h1>
+              <p className="mt-2 text-sm text-red-950/70">
                 Spin to pick a game. Picked games are removed from the list.
               </p>
             </div>
             <Link
               href="/"
-              className="text-sm font-medium text-zinc-700 hover:text-zinc-900"
+              className="text-sm font-medium text-red-950/80 hover:text-red-950"
             >
               ← Home
             </Link>
@@ -133,22 +133,22 @@ export default function GamesPage() {
         </header>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
-          <section className="lg:col-span-4 rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
+          <section className="lg:col-span-4 rounded-2xl border border-red-900/20 bg-white/80 p-5 shadow-sm backdrop-blur">
             <div className="flex items-baseline justify-between">
-              <h2 className="text-lg font-semibold">Remaining</h2>
-              <span className="text-xs text-zinc-600">{remaining.length}/8</span>
+              <h2 className="text-lg font-semibold text-red-950">Remaining</h2>
+              <span className="text-xs text-red-950/70">{remaining.length}/8</span>
             </div>
 
             <ul className="mt-4 space-y-2">
               {remaining.length === 0 ? (
-                <li className="rounded-xl border border-dashed border-zinc-300 p-4 text-sm text-zinc-600">
+                <li className="rounded-xl border border-dashed border-red-900/30 bg-white/50 p-4 text-sm text-red-950/70">
                   No games left.
                 </li>
               ) : (
                 remaining.map((g) => (
                   <li
                     key={g}
-                    className="rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm"
+                    className="rounded-xl border border-red-900/15 bg-white px-4 py-2 text-sm"
                   >
                     {g}
                   </li>
@@ -160,23 +160,23 @@ export default function GamesPage() {
               <button
                 onClick={spin}
                 disabled={spinning || remaining.length === 0}
-                className="rounded-xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-40"
+                className="rounded-xl bg-red-700 px-4 py-2 text-sm font-semibold text-yellow-100 hover:bg-red-800 disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {spinning ? "Spinning (10s)…" : "Spin"}
               </button>
               <button
                 onClick={resetGames}
-                className="rounded-xl border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+                className="rounded-xl border border-yellow-400/50 bg-white/10 px-4 py-2 text-sm font-semibold text-red-950 hover:bg-white/15"
               >
                 Reset
               </button>
             </div>
 
             <div className="mt-4 text-sm">
-              <div className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
+              <div className="text-xs font-semibold uppercase tracking-widest text-red-950/70">
                 Selected
               </div>
-              <div className="mt-2 rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
+              <div className="mt-2 rounded-2xl border border-yellow-500/30 bg-gradient-to-r from-yellow-50 via-white to-yellow-50 p-4">
                 <div className="text-base font-semibold">
                   {selected ?? "—"}
                 </div>
@@ -184,10 +184,10 @@ export default function GamesPage() {
             </div>
           </section>
 
-          <section className="lg:col-span-8 rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
+          <section className="lg:col-span-8 rounded-2xl border border-red-900/20 bg-white/80 p-5 shadow-sm backdrop-blur">
             <div className="flex items-baseline justify-between">
-              <h2 className="text-lg font-semibold">Wheel</h2>
-              <span className="text-xs text-zinc-600">
+              <h2 className="text-lg font-semibold text-red-950">Wheel</h2>
+              <span className="text-xs text-red-950/70">
                 {remaining.length ? "" : "Reset to spin again"}
               </span>
             </div>
@@ -195,7 +195,7 @@ export default function GamesPage() {
             <div className="mt-5 flex items-center justify-center">
               <div className="relative">
                 {/* Pointer */}
-                <div className="pointer-events-none absolute left-1/2 top-[-10px] z-10 h-0 w-0 -translate-x-1/2 border-l-[12px] border-r-[12px] border-b-[18px] border-l-transparent border-r-transparent border-b-zinc-900" />
+                <div className="pointer-events-none absolute left-1/2 top-[-10px] z-10 h-0 w-0 -translate-x-1/2 border-l-[12px] border-r-[12px] border-b-[18px] border-l-transparent border-r-transparent border-b-yellow-400" />
 
                 <svg
                   width={360}
@@ -256,13 +256,13 @@ export default function GamesPage() {
                   </g>
 
                   {/* Center cap */}
-                  <circle cx="180" cy="180" r="44" fill="#ffffff" stroke="#e4e4e7" />
+                  <circle cx="180" cy="180" r="44" fill="#ffffff" stroke="#f59e0b" />
                   <text
                     x="180"
                     y="180"
                     textAnchor="middle"
                     dominantBaseline="middle"
-                    fill="#111827"
+                    fill="#7f1d1d"
                     fontSize="12"
                     fontWeight={700}
                   >
@@ -272,7 +272,7 @@ export default function GamesPage() {
               </div>
             </div>
 
-            <div className="mt-5 text-xs text-zinc-600">
+            <div className="mt-5 text-xs text-red-950/70">
               Note: wheel labels truncate long game names.
             </div>
           </section>
