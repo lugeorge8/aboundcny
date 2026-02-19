@@ -150,7 +150,17 @@ export default function GamesPage() {
                     key={g}
                     className="rounded-xl border border-red-900/15 bg-white px-4 py-2 text-sm"
                   >
-                    {g}
+                    <div className="flex items-center justify-between gap-3">
+                      <span className="truncate">{g}</span>
+                      {g === "Zodiac Charades" ? (
+                        <Link
+                          href="/charades/zodiac"
+                          className="shrink-0 rounded-lg bg-yellow-400 px-2 py-1 text-xs font-semibold text-red-950 hover:bg-yellow-300"
+                        >
+                          Open
+                        </Link>
+                      ) : null}
+                    </div>
                   </li>
                 ))
               )}
