@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -26,6 +27,23 @@ export default function Home() {
             >
               Game wheel
             </Link>
+          </div>
+
+          <div className="mt-10 border-t border-yellow-200/15 pt-8 text-left">
+            <h2 className="text-lg font-semibold tracking-tight text-yellow-100">
+              Demo
+            </h2>
+            <p className="mt-2 text-sm text-yellow-100/80">
+              Here’s a dog.
+            </p>
+            <Image
+              src="/dog.svg"
+              alt="A dog"
+              width={1200}
+              height={700}
+              className="mt-4 h-auto w-full rounded-2xl border border-yellow-200/20"
+              priority={false}
+            />
           </div>
 
           {/* removed footer text */}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Cartoon dog">
+  <rect width="1200" height="700" fill="#0b1220"/>
+  <g transform="translate(180 90)">
+    <rect x="0" y="0" width="840" height="520" rx="48" fill="#111827" stroke="#fbbf24" stroke-opacity="0.25" stroke-width="6"/>
+
+    <!-- dog body -->
+    <g transform="translate(210 110)">
+      <ellipse cx="260" cy="250" rx="260" ry="170" fill="#c08457"/>
+      <ellipse cx="360" cy="240" rx="230" ry="150" fill="#d39a6a" opacity="0.9"/>
+
+      <!-- head -->
+      <circle cx="210" cy="170" r="140" fill="#c08457"/>
+      <circle cx="210" cy="170" r="110" fill="#d39a6a" opacity="0.95"/>
+
+      <!-- ears -->
+      <path d="M120 90 C60 60, 40 120, 70 170 C100 220, 170 210, 160 150 C155 120, 145 105, 120 90 Z" fill="#8b5e3c"/>
+      <path d="M300 85 C365 55, 390 120, 360 175 C330 230, 255 220, 260 155 C265 120, 280 100, 300 85 Z" fill="#8b5e3c"/>
+
+      <!-- eyes -->
+      <circle cx="170" cy="160" r="14" fill="#111827"/>
+      <circle cx="250" cy="160" r="14" fill="#111827"/>
+      <circle cx="165" cy="155" r="4" fill="#fff"/>
+      <circle cx="245" cy="155" r="4" fill="#fff"/>
+
+      <!-- snout -->
+      <ellipse cx="210" cy="215" rx="80" ry="60" fill="#e7c19b"/>
+      <ellipse cx="210" cy="225" rx="70" ry="50" fill="#f1d0ad" opacity="0.9"/>
+      <circle cx="210" cy="210" r="16" fill="#111827"/>
+      <path d="M210 226 C195 238, 182 246, 170 250" stroke="#111827" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <path d="M210 226 C225 238, 238 246, 250 250" stroke="#111827" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+      <!-- tail -->
+      <path d="M520 260 C610 230, 640 300, 585 340 C560 358, 540 345, 535 325" stroke="#c08457" stroke-width="44" stroke-linecap="round" fill="none"/>
+
+      <!-- legs -->
+      <rect x="150" y="340" width="70" height="130" rx="30" fill="#c08457"/>
+      <rect x="260" y="350" width="70" height="120" rx="30" fill="#c08457"/>
+      <rect x="380" y="350" width="70" height="120" rx="30" fill="#c08457"/>
+      <rect x="470" y="340" width="70" height="130" rx="30" fill="#c08457"/>
+
+      <!-- collar -->
+      <path d="M110 250 C170 290, 250 300, 310 250" stroke="#ef4444" stroke-width="28" stroke-linecap="round" fill="none"/>
+      <circle cx="210" cy="285" r="18" fill="#fbbf24"/>
+    </g>
+
+    <!-- label -->
+    <text x="420" y="455" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system" font-size="28" fill="#fde68a" opacity="0.9">demo dog</text>
+  </g>
+</svg>
